@@ -39,7 +39,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   ]
 admin_ssh_key {
     username   = "azureuser"
-    public_key = file("/home/devops/.ssh/id_rsa.pub")
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCenZwtdV3l2wxvYzcQo2KXcMeulYi58hEl+j2zAUFOHXRyd7pmYSkZg7c77OEyx0M0pcgIoZrnoH65JG4hehh71EEXUkiXv5UH8V9EZ8WrtIXyj0nmD/AUEeRPh5psPDrgTBXmcegKiYiZoCXTXfV9Xy+z0DJ3lfdb5Z59qmEMW/n8W5jjk1hEYWt2EzsM565keKGC/HYhbypTEvKbT4xD0wf3kmM/Gbr5tsR6ha7V3eUHeSeCH2RKrl36KewnF/7B0i7f2d1wTTuYo4LDl4hagm92fP0+Pt5vSx6oRaSTuRKFO39lHOclh2LAYkwu/SoEYoxGpP109nBGxmYIu59+/5bL5B3AcLnDslgGyZybk7G6OFeMx27frwNhQUxsGjlCHT9Vkf8FQ2D1Q8onzvAXIHYlx+FhNKI0CWvLhzaDP3iMc1Kk7xFttiwn+wvP5/X35A4B6oPkw19qO7P0lYMYtsDcJPIhpqc8j4Q6mviBad/eg3oNy1k/1fu2St/XEv8= devops@devops-TUF-Gaming-FX505DY-FX505DY"
   }
 
   os_disk {
