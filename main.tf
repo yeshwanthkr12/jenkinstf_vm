@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   name                = "jenkinstfvm"
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
-  size                = "D2ls_v5"
+  size                = "Standard_DS12-1_v2"
   admin_username      = "azureuser"
 disable_password_authentication = true
   network_interface_ids = [
