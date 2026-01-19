@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   name                = "jenkinstfvm"
   resource_group_name = data.azurerm_resource_group.rg.name
   location            = data.azurerm_resource_group.rg.location
-  size                = "Standard_B1s"
+  size                = "B2as_v2"
   admin_username      = "azureuser"
   network_interface_ids = [
     azurerm_network_interface.nic.id
